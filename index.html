@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    button{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+        margin-top: 300px;
+        text-decoration: none;
+        border-radius: 20px;
+        font: bold;
+        margin-left: 800px;
+        transition: ease-in-out;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+    }
+    button a{
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    button:hover{
+        background-color: rgb(255, 0, 0);
+        transition: ease-in-out;
+        cursor: pointer;
+        border: 1px solid black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    button::after{
+        background-color: rgb(116, 26, 219);
+    }
+    button::before{
+        background-color: rgb(255, 0, 0);
+    }
+    div{
+        background-color: auto;
+    }
+    @keyframes new{
+        form{background-color: black;}
+        to{background-color: azure;}
+    }
+
+</style>
+<body>
+    <div>
+        <button onclick="nxt()"><span id="a">Click Here To Redirect</span></button>
+    </div>
+   <script>
+    function nxt() {
+        document.getElementById('a').innerHTML = "Please Wait...";
+        setTimeout(function() {
+            window.location.href = "https://flask-app-2-s2mz.onrender.com";
+        }, 1000); // Redirect after 1 second (adjust the time as needed)
+    }
+   </script>
+</body>
+</html>
